@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> My Portfolio</title>
+    <link rel = "stylesheet" href = "Style.css">
+    <script src="https://kit.fontawesome.com/6b9dd51ddd.js" crossorigin="anonymous"></script>
+</head>
+<body>  
+<div id = "header">
+    <div class = "container">
+        <nav>
+            <a class = "logo">gracy</a>
+            <ul id="sidemenu">
+                <li class = "active"><a href = "#header"> Home</a></li>
+                <li><a href = "#about"> About</a></li>
+                <li><a href = "#Skills"> Skills</a></li>
+                <li><a href = "#Portfolio"> Portfolio</a></li>
+                <li><a href = "#Resume"> Resume</a></li>
+                <i class="fa-solid fa-xmark" onclick = "closemenu()"></i> 
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()" ></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hello everyone,<br> 
+                my name is<br><span>Grace Ann Maguate</span> </h1>
+            <p>I'm a Computer Science Student</p>
+        </div>
+        <div class="icon">
+                <a href="https://www.instagram.com/graacie.ann?igsh=dHdpYWw3YzR2bzFq">
+                <img src="insta.png"></a>
+                <a href="https://www.facebook.com/graceannmaguate?mibextid=ZbWKwL">
+                <img src="fb.png"></a>
+                <a href="https://www.tiktok.com/@_dapersonn?_t=8lyWeY7FdNR&_r=1">
+                <img src="tiktok.png"></a>
+                <a href="https://ph.linkedin.com/in/ann-grays-089b42301">
+                <img src="linked.png"></a>
+        
+        </div>
+    </div>
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-2">
+                <img src="about.jpg">
+            </div>
+            <div class="about-col-1">
+                <h1 class="sub-title">ABOUT</h1>
+                <p>I am Grace Ann L. Maguate  <br>Computer Science Student and  <br> currently studying at <br>Pambayang Dalubhasaan ng Marilao.
+                    <br>I know how to play indoor <br>sports such as Table tennis, Badminton.
+                    <br>I know how to code and i have <br> basic learn using <br>java, mysql, html, and excel.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "Skills">
+    <div class="container">
+        <div class="skill">SKILLS</div>
+        <div class="talent">
+            <div class="circular">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">60%</div>
+                <div class="text">Coding</div>
+            </div>
+            <div class="circular">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">70%</div>
+                <div class="text">Designing</div>
+            </div>
+            <div class="circular">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">90%</div>
+                <div class="text">Reading</div>
+            </div>
+            <div class="circular">
+                <svg x="0px" y="0px" viewBox="0 0 200 200">
+                    <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                    <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                </svg>
+                <div class="percentage">80%</div>
+                <div class="text">Shopping</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id = "Portfolio">
+    <div class="container">
+        <div class="port">PORTFOLIO</div>
+        <div class="gallery">
+           <img src="calculator.jpg" class="card-img" >
+           <div class="imgbody">
+                <h1 class="card-title">Calculator</h1>
+                <p class="card-sub-title">Calculator using java programming language</p>
+           </div>
+        </div>
+        <div class="gallery">
+            <img src="defense.jpg" class="card-img" >
+            <div class="imgbody">
+                 <h1 class="card-title">defense</h1>
+                 <p class="card-sub-title">defense on Mercury Drugstore App using figma</p>
+            </div>
+         </div>
+         <div class="gallery">
+            <img src="form.jpg" class="card-img" >
+            <div class="imgbody">
+                 <h1 class="card-title">Form</h1>
+                 <p class="card-sub-title">Form using java programming language</p>
+            </div>
+         </div>
+         <div class="gallery">
+            <img src="java.jpg" class="card-img" >
+            <div class="imgbody">
+                 <h1 class="card-title">Java</h1>
+                 <p class="card-sub-title">coding using java programming language</p>
+            </div>
+         </div>
+    </div>
+</div>
+<div id="Resume">
+    <div class="container">
+            <div class="down-2">
+                <h1 class="alpha">Resume</h1>
+                <p>If you are interested in me, <br>You can check out my resume here</p>
+                <a href ="Maguate-Grace-Ann-L._20240502_194950_0000.pdf" class="btn" download><i class="fa-regular fa-circle-down"></i>Download CV</a>
+            </div>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0"
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px"
+    }
+</script>
+</body>
+</html>
